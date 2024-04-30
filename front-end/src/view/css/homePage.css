@@ -1,24 +1,23 @@
 body {
-    font-family: Arial, sans-serif;
+    font-size: 1em;    
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
 
 header {
-    background-color: #333;
+    background-color: #8453B3;
     color: #fff;
     text-align: center;
-    padding: 50px 0;
+    padding: 3.125em 0;
 }
 
 .form-container {
-    max-width: 400px;
+    width: 25em;
     margin: 0 auto;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1.25em;
+    border-radius:  0.3125em;
+    box-shadow: 0 0 0.625em #0000001a;
 }
 
 .form-group {
@@ -30,13 +29,14 @@ label {
     margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 0.625em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.3125em;
+    /* box-sizing: border-box; */
 }
 
 button {

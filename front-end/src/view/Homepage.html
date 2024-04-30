@@ -4,16 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>UnINPACT</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/homePage.css">
 </head>
 
 <body>
-    <header>
-        <h1>Bem-vindo à Nossa Plataforma</h1>
-        <p>Cadastre-se agora para obter acesso total!</p>
+    <header class="cabecalho">
+        <img class="cabecalho__logo" src="img/unimpact_logo.svg" title="Ir para a pagina inicial da Unimpact"
+            alt="Unimpact">
+        <nav>
+            <ul class="cabecalho__button">
+                <li class="cabecalho__cadastro-button"><button onclick="window.location.href = 'pages/cadastroChoice.html';">Cadastro</button>            
+                </li>
+                <li class="cabecalho__item-menu"> <button onclick="window.location.href = 'login.html';">Login</button> Entrar </a> </li>
+                <li class="cabecalho__item-menu cabecalho__item-menu--matricular"> <a href="#">Matricule-se</a> </li>
+            </ul>
+        </nav>
     </header>
-
+    <main>
+        <section>
+            <h1>O UNIMPACT</h1>
+            <p>O UNIMPACT é uma iniciativa estratégica da Universidade Católica de Pernambuco que visa construir pontes entre o mundo acadêmico e a sociedade na busca de soluções colaborativas de IMPACTO SOCIOAMBIENTAL.</p>
+            <h2>QUEM PODE IMPACTAR?</h2>
+            <p>Qualquer instituição ou empresa pública ou privada, movimento ou coletivo pode apresentar as suas demandas e desafios à universidade, para pensarmos juntos em soluções inovadoras.</p>
+            <blockquote>Com a Unimpact, a Unicap, ao celebrar 80 anos, coloca à disposição o conhecimento e experiência de quase 10.000 estudantes e docentes para criar e desenvolver projetos e pesquisas que possam realmente fazer a diferença na vida das pessoas. Assim comprovamos que o nosso campus é a cidade e nossa universidade, verdadeiramente, comunitária.
+            <footer>Prof. Dr. Pe. Pedro Rubens Ferreira, SJ – Reitor da Unicap</footer></blockquote>
+        </section>
+        
+        <section>
+            <h2>OPERACIONALIZAÇÃO</h2>
+            <h3>QUAL O INVESTIMENTO PARA PARTICIPAR?</h3>
+            <p>As demandas apresentadas serão desenvolvidas no âmbito de atividades acadêmicas como Projetos de Conclusão de Curso (TCCs), Estágios, Iniciativas de Extensão Universitária etc. Caso exista algum orçamento por parte do parceiro, esse poderá ser utilizado para eventuais custos e estímulo de bolsas para docentes e estudantes.</p>
+            <h3>PRAZOS E COMPROMISSOS</h3>
+            <p>Um termo de compromisso será assinado pelas partes envolvidas visando compactuar os prazos de realização, repasses de recursos (quando houver) e as responsabilidades e benefícios mútuos.</p>
+            <h3>COMO APRESENTAR A MINHA DEMANDA?</h3>
+            <p><a href="formulario.html">CLIQUE AQUI</a> para preencher o formulário de apresentação de demanda. Após a análise e aprovação da solicitação, entraremos em contato para elaborarmos juntos o nosso plano de trabalho.</p>
+        </section>
+    </main>
+    
     <section class="form-container">
         <h2>Cadastre-se</h2>
         <form action="/signup" method="POST">
@@ -36,3 +67,4 @@
 </body>
 
 </html>
+ 
